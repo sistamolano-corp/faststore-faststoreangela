@@ -8,7 +8,7 @@ module.exports = {
 },
 
   // Theming
-  theme: 'custom-theme',
+  theme: 'soft-blue',
 
   // Ecommerce Platform
   platform: 'vtex',
@@ -83,7 +83,7 @@ module.exports = {
 
   analytics: {
     // https://developers.google.com/tag-platform/tag-manager/web#standard_web_page_installation,
-    gtmContainerId: "",
+    gtmContainerId: "GTM-PG6PKL3F",
   },
 
   experimental: {
