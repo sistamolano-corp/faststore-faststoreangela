@@ -63,7 +63,13 @@
   // --------------------------------------------------------
   // Add here the customizations for FastStore UI components.
 
-    --fs-logo-width: 8rem;
+  .section {
+    [data-fs-newsletter] {
+      --fs-newsletter-main-text-color: red;
+    }
+  }  
+  
+  --fs-logo-width: 10rem;
 
     [data-fs-product-card] {
       --fs-product-card-border-color: transparent;

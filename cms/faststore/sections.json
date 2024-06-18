@@ -1,0 +1,59 @@
+[
+  {
+    "name": "CallToAction",
+    "schema": {
+      "title": "Call To Action Custom",
+      "description": "Get your 20% off on the first purchase!",
+      "type": "object",
+      "required": [
+        "title",
+        "link"
+      ],
+      "properties": {
+        "title": {
+          "title": "Title",
+          "type": "string"
+        },
+        "link": {
+          "title": "Link Path",
+          "type": "object",
+          "required": [
+            "text",
+            "url"
+          ],
+          "properties": {
+            "text": {
+              "title": "Text",
+              "type": "string"
+            },
+            "url": {
+              "title": "URL",
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "OurStores",
+    "schema": {
+      "title": "OurStores Custom Angela",
+      "description": "Search stores near to the users",
+      "type": "object",
+      "required": ["title", "description"],
+      "properties": {
+        "title": {
+          "title": "Title",
+          "type": "string",
+          "default": "Explore Nearby Stores"
+        },
+        "description": {
+          "title": "Link Path",
+          "type": "string",
+          "default": "Discover the closest store to you and pay us a visit."
+        }
+      }
+    }
+  }
+]
