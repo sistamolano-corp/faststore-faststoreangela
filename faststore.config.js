@@ -54,9 +54,9 @@ module.exports = {
 
   previewRedirects: {
     home: '/',
-    plp: "/fresh%20food",
-    search: "/s?q=Fresh%20Produce",
-    pdp: "/triple-buffered-alenas/p",
+    plp: "/fresh-food",
+    search: "/s?q=metal",
+    pdp: "/triple-buffered-alenas-79/p",
   },
 
   // Lighthouse CI
@@ -64,8 +64,8 @@ module.exports = {
     server: process.env.BASE_SITE_URL || 'http://localhost:3000',
     pages: {
       home: '/',
-      pdp: "/triple-buffered-alenas/p",
-      collection: "/fresh%20food",
+      pdp: "/triple-buffered-alenas-79/p",
+      collection: "/vitrines",
     },
   },
 
@@ -73,10 +73,10 @@ module.exports = {
   cypress: {
     pages: {
       home: '/',
-      pdp: "/triple-buffered-alenas/p",
-      collection: "/fresh%20food",
-      collection_filtered: "/fresh%20food/?category-1=fresh%20food&brand=Fresh%20Produce&facets=category-1%2Cbrand%27",
-      search: "/s?q=Fresh%20Produce",
+      pdp: "/triple-buffered-alenas-79/p",
+      collection: "/vitrines",
+      collection_filtered: "/vitrines?category-1=fresh%20food&brand=Fresh%20Produce&facets=category-1%2Cbrand%27",
+      search: "/s?q=metal",
     },
     browser: 'electron',
   },

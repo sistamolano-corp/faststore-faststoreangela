@@ -1,0 +1,3 @@
+extend type StoreProduct {
+  customData: String!
+}
