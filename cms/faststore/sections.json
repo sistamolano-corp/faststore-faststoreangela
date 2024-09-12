@@ -55,5 +55,21 @@
         }
       }
     }
+  },
+  {
+    "name": "ModalProductCategory",
+    "schema": {
+      "title": "Modal for product in specific category",
+      "description": "Modal for product pages of specific categories",
+      "type": "object",
+      "required": ["modaltext"],
+      "properties": {
+        "modaltext": {
+          "title": "Modal text",
+          "type": "string",
+          "description": "Add here  the text you want to show on your modal"
+        }
+      }
+    }
   }
 ]

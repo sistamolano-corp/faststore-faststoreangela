@@ -10,17 +10,17 @@
   // --------------------------------------------------------
 
   // PALETTE
-  --fs-color-main-0: #e6e6e6;
-  --fs-color-main-1: #d8e2ff;
-  --fs-color-main-2: #00419e;
-  --fs-color-main-3: #002c71;
-  --fs-color-main-4: #001947;
+  --fs-color-main-0: #FFB6C1	;
+  --fs-color-main-1: #FFC0CB;
+  --fs-color-main-2: #9370DB;
+  --fs-color-main-3: #8A2BE2;
+  --fs-color-main-4: #4B0082;
 
-  --fs-color-accent-0: #00ba92;
-  --fs-color-accent-1: #8d50fd;
-  --fs-color-accent-2: #732fe2;
-  --fs-color-accent-3: #5900c8;
-  --fs-color-accent-4: #4700a0;
+  --fs-color-accent-0: #9400D3;
+  --fs-color-accent-1: #9932CC;
+  --fs-color-accent-2: #BA55D3;
+  --fs-color-accent-3: #A020F0;
+  --fs-color-accent-4: #8B008B;
 
   // HIERARCHY
   --fs-color-primary-bkg: var(--fs-color-main-4);
@@ -33,8 +33,9 @@
   --fs-color-warning-bkg: #f6e0ba;
 
   // COMPONENTS & STATES
+  --fs-color-body-bkg: #fbe8ee;
   --fs-color-text-display: var(--fs-color-main-4);
-
+  --fs-alert-content-text-display: #FFF0F5;
   --fs-color-action-bkg: var(--fs-color-accent-3);
   --fs-color-action-bkg-hover: var(--fs-color-accent-2);
   --fs-color-action-bkg-active: var(--fs-color-accent-1);
@@ -63,11 +64,20 @@
   // --------------------------------------------------------
   // Add here the customizations for FastStore UI components.
 
+  @import '@faststore/ui/src/components/molecules/Modal/styles.scss';
+  @import '@faststore/ui/src/components/atoms/Button/styles.scss';
+
+
   .section {
     [data-fs-newsletter] {
-      --fs-newsletter-main-text-color: red;
+      --fs-newsletter-main-text-color: #FFF0F5;
     }
-  }  
+
+
+  [data-fs-alert] {
+    --fs-alert-text-color:#E6E6FA;
+  }
+
   
   --fs-logo-width: 10rem;
 
@@ -80,4 +90,5 @@
       }
     }
   }
+}
 }
